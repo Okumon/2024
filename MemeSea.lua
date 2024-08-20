@@ -1,4 +1,4 @@
-"
+
 local UserInputService = game:GetService("UserInputService")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local TweenService = game:GetService("TweenService")
@@ -2198,4 +2198,4 @@ local MemeBit = Main:AddLabel("Sttus:")
                             for i,v in pairs(workspace.Monster:GetChildren()) do
                                 if v.Name == "Moai" and v.Humanoid.Health > 0 then
                                     repeat task.wait()
-                                 …"
+                                 
