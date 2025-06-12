@@ -1040,7 +1040,7 @@ Main:Button("TP",function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
 end)
 
-Main:Toggle("Auto Tp",false,function(value)
+Main:Toggle("Auto Tp",false,function(t)
 	_G.TPPlayer = t
 while _G.TPPlayer do wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
