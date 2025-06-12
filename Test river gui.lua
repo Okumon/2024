@@ -1032,7 +1032,7 @@ Main:Seperator("Seperator")
 
 Main:Label("Select Player!")
 
-local Section = Main:Dropdown("Select Player!!", "Click To Select", Playerslist, function(t)
+local drop = Main:Dropdown("Select Player!!","Click To Select",Playerslist,function(t)
 	PlayerTP = t
 end)
 
@@ -1048,10 +1048,7 @@ end
 end)
 
 
-Main:Button("Refresh Weapon",function()
-	SearchWeapon:Clear()
-	SearchWeapon:Add(Weapon)
-end)
+
 
 Playerslist = {}
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
@@ -1061,7 +1058,7 @@ end
 Main:Label("Mode Tween")
 
 Main:Button("Refresh Dropdown","Refresh Dropdown", function()
-  Section:Refresh(Playerslist)
+  drop:Refresh(Playerslist)
 end)
 
 Main:Toggle("Spectate Player",_G.Spectate_Player,function(value)
